@@ -26,25 +26,25 @@ class SNAKE:
         self.direction = Vector2(1,0)
         self.new_block = False
 
-        self.head_up = pygame.image.load("D:\Codes/Snake/Graphics/head_up.png").convert_alpha()
-        self.head_down = pygame.image.load("D:\Codes/Snake/Graphics/head_down.png").convert_alpha()
-        self.head_right = pygame.image.load("D:\Codes/Snake/Graphics/head_right.png").convert_alpha()
-        self.head_left = pygame.image.load("D:\Codes/Snake/Graphics/head_left.png").convert_alpha()
+        self.head_up = pygame.image.load("/home/jude/Documents/GitHub/Snake-game/Snake/Graphics/head_up.png").convert_alpha()
+        self.head_down = pygame.image.load("/home/jude/Documents/GitHub/Snake-game/Snake/Graphics/head_down.png").convert_alpha()
+        self.head_right = pygame.image.load("/home/jude/Documents/GitHub/Snake-game/Snake/Graphics/head_right.png").convert_alpha()
+        self.head_left = pygame.image.load("/home/jude/Documents/GitHub/Snake-game/Snake/Graphics/head_left.png").convert_alpha()
         
-        self.tail_up = pygame.image.load('D:\Codes/Snake/Graphics/tail_up.png').convert_alpha()
-        self.tail_down = pygame.image.load('D:\Codes/Snake/Graphics/tail_down.png').convert_alpha()
-        self.tail_right = pygame.image.load('D:\Codes/Snake/Graphics/tail_right.png').convert_alpha()
-        self.tail_left = pygame.image.load('D:\Codes/Snake/Graphics/tail_left.png').convert_alpha()
+        self.tail_up = pygame.image.load('/home/jude/Documents/GitHub/Snake-game/Snake/Graphics/tail_up.png').convert_alpha()
+        self.tail_down = pygame.image.load('/home/jude/Documents/GitHub/Snake-game/Snake/Graphics/tail_down.png').convert_alpha()
+        self.tail_right = pygame.image.load('/home/jude/Documents/GitHub/Snake-game/Snake/Graphics/tail_right.png').convert_alpha()
+        self.tail_left = pygame.image.load('/home/jude/Documents/GitHub/Snake-game/Snake/Graphics/tail_left.png').convert_alpha()
         
-        self.body_vertical = pygame.image.load('D:\Codes/Snake/Graphics/body_vertical.png').convert_alpha()
-        self.body_horizontal = pygame.image.load('D:\Codes/Snake/Graphics/body_horizontal.png').convert_alpha()
+        self.body_vertical = pygame.image.load('/home/jude/Documents/GitHub/Snake-game/Snake/Graphics/body_vertical.png').convert_alpha()
+        self.body_horizontal = pygame.image.load('/home/jude/Documents/GitHub/Snake-game/Snake/Graphics/body_horizontal.png').convert_alpha()
         
-        self.body_tr = pygame.image.load('D:\Codes/Snake/Graphics/body_tr.png').convert_alpha()
-        self.body_tl = pygame.image.load('D:\Codes/Snake/Graphics/body_tl.png').convert_alpha()
-        self.body_br = pygame.image.load('D:\Codes/Snake/Graphics/body_br.png').convert_alpha()
-        self.body_bl = pygame.image.load('D:\Codes/Snake/Graphics/body_bl.png').convert_alpha()
+        self.body_tr = pygame.image.load('/home/jude/Documents/GitHub/Snake-game/Snake/Graphics/body_tr.png').convert_alpha()
+        self.body_tl = pygame.image.load('/home/jude/Documents/GitHub/Snake-game/Snake/Graphics/body_tl.png').convert_alpha()
+        self.body_br = pygame.image.load('/home/jude/Documents/GitHub/Snake-game/Snake/Graphics/body_br.png').convert_alpha()
+        self.body_bl = pygame.image.load('/home/jude/Documents/GitHub/Snake-game/Snake/Graphics/body_bl.png').convert_alpha()
 
-        self.crunch_sound =pygame.mixer.Sound("D:\Codes/Snake/Sound/crunch.wav")
+        self.crunch_sound =pygame.mixer.Sound("/home/jude/Documents/GitHub/Snake-game/Snake/Sound/crunch.wav")
 
     def reset(self):
          self.body = [Vector2(5,10),Vector2(4,10),Vector2(3,10)]
@@ -52,9 +52,6 @@ class SNAKE:
     def draw_snake(self):
         self.update_head_graphics()
         self.update_tail_graphics()
-
-
-
 
 
 
@@ -205,8 +202,8 @@ cell_size = 40
 cell_number = 19
 screen = pygame.display.set_mode((cell_number*cell_size , cell_number*cell_size))
 clock = pygame.time.Clock()
-apple = pygame.image.load("D:\Codes/Snake/Graphics/apple.png").convert_alpha()
-game_font = pygame.font.Font("D:\Codes/Snake/Font/PoetsenOne-Regular.ttf",25)
+apple = pygame.image.load("/home/jude/Documents/GitHub/Snake-game/Snake/Graphics/apple.png").convert_alpha()
+game_font = pygame.font.Font("/home/jude/Documents/GitHub/Snake-game/Snake/Font/PoetsenOne-Regular.ttf",25)
 
 
 SCREEN_UPDATE = pygame.USEREVENT
